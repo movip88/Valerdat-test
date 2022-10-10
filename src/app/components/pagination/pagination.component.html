@@ -1,0 +1,6 @@
+<table *ngIf="pages.length > 0">
+  <tr>
+    <td *ngFor="let page of pages" [ngClass]="{'active': page === currentPage}">{{page}}</td>
+  </tr>
+</table>
+<div *ngIf="pages.length === 0">No data</div>
